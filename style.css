@@ -1,0 +1,19 @@
+:root{--bg:#f7f8fa;--card:#fff;--fg:#1b1f24;--muted:#5b6470;--line:#d8dde3;--accent:#2f5bd3}
+@media (prefers-color-scheme:dark){:root{--bg:#0d1828;--card:#11213a;--fg:#eef2f8;--muted:#b4c0d3;--line:#2c3d5a;--accent:#8fb0ff}}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,"Hiragino Sans","Noto Sans JP",sans-serif;line-height:1.75;margin:0;padding:24px 16px 48px}
+main{max-width:760px;margin:0 auto}
+a{color:var(--accent)}
+header.site{margin-bottom:28px} header.site a{color:inherit;text-decoration:none}
+h1{font-size:1.6rem;line-height:1.4;margin:.2em 0} h2{font-size:1.15rem;margin-top:2em;border-bottom:1px solid var(--line);padding-bottom:.3em}
+.lead,.muted{color:var(--muted)}
+.cards{display:grid;gap:14px}
+.card{display:flex;gap:14px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;color:inherit;text-decoration:none}
+.card img,.icon{width:64px;height:64px;border-radius:16px;flex:none;background:var(--line)}
+.card .name{font-weight:700;font-size:1.05rem}
+.badge{display:inline-block;font-size:.75rem;border:1px solid var(--line);border-radius:999px;padding:0 .6em;margin-left:.4em;color:var(--muted);vertical-align:middle}
+.apphead{display:flex;gap:16px;align-items:center}
+.apphead img,.apphead .icon{width:88px;height:88px;border-radius:22px}
+table{border-collapse:collapse;width:100%;font-size:.92rem;display:block;overflow-x:auto}
+th,td{border:1px solid var(--line);padding:.5em .6em;text-align:left;vertical-align:top}
+footer{margin-top:48px;font-size:.85rem;color:var(--muted)}
